@@ -1,0 +1,70 @@
+
+.card-container {
+    text-align: center;
+    margin: 20px; /* Adjust margin as needed */
+    padding-top: 70px;
+    padding-bottom: 30px;
+  
+    
+  
+}
+
+.card1 {
+    width: 420px;
+    height: 300px;
+    display: inline-block;
+    margin: 17px; /* Adjust margin as needed */
+    border: 1px solid #0d37cf;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    background-color: #0f2ee3b3;
+}
+.card2 {
+    width: 420px;
+    height: 300px;
+    display: inline-block;
+    margin: 17px; /* Adjust margin as needed */
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 7px;
+    background-color: #031b4e99;
+}
+.card3 {
+    width: 420px;
+    height: 300px;
+    display: inline-block;
+    margin: 17px; /* Adjust margin as needed */
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    background-color: rgb(108, 155, 108);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.card1 h1 {
+    color: #f1e9e9;
+}
+.card1 h1 {
+    color: #f1e9e9;
+}
+.card1 h1 {
+    color: #f1e9e9;
+}
+.card1 p {
+    color: #f1e9e9;
+}
+.card2 p {
+    color: #f1e9e9;
+}
+.card3 p {
+    color: #f1e9e9;
+}
+

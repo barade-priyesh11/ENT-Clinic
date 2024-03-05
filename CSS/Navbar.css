@@ -1,0 +1,120 @@
+/* Style for the navigation bar */
+.Nav {
+    /* Add padding to the top and bottom of the navigation container */
+    padding-top: 7px;
+    padding-bottom: 8px;
+    /* background-color: #f0f7fd; */
+}
+
+/* Style for the navbar brand/logo */
+.navbar-brand {
+    /* Add left margin to the brand/logo for spacing */
+    margin-right: 25px;
+    margin-left: auto;
+    
+}
+
+/* Style for the navigation links */
+.navbar-nav {
+    /* Add margin to the right of each nav item for spacing */
+    margin-right: 10px;
+}
+.nav-item {
+    margin-right: 29px; /* Add right margin for spacing between nav items */
+}
+/* Style for the search form */
+.d-flex {
+    /* Add some spacing between the search input and button */
+    margin-left: 10px;
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+    /* Add some spacing to the top of the dropdown menu */
+    margin-top: 5px;
+}
+.btn {
+    background-color: #053db4;
+    padding: 14px 40px;
+    /* color: #fff; */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    /* border: 2px  #04095980; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+   }
+   
+   .btn span:last-child {
+    display: none;
+   }
+   
+   .btn:hover {
+    transition: .4s;
+    background-color: #1176e2;
+    color: #fff;
+   
+    border-radius: 30px; /* Adjust the value for the desired border radius */
+}
+
+   
+   .btn:active {
+    background-color: #1176e2;
+   }
+   
+  /*  search logo css*/ 
+  /* styles.css */
+
+/* ... (previous styles) */
+
+/* Style for the dropdown menu trigger on hover with a small delay */
+.nav-item {
+    position: relative; /* Make the .nav-item a positioned container for absolute positioning of the dropdown-menu */
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
+    pointer-events: none; /* Avoid interaction with the invisible dropdown before it's visible */
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto; /* Enable interaction when the dropdown is visible */
+}
+
+.dropdown-item {
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect for background color */
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Example styling for navigation links - Responsive */
+@media (max-width: 767px) {
+    .navbar-nav {
+        margin-right: 0;
+    }
+
+    .nav-item {
+        margin-right: 15px;
+    }
+}
