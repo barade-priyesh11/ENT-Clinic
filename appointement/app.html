@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Appointment Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border-radius: 25px;
+        border: 2px solid #000;
+    }
+    .form-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        
+
+    }
+    .form-group input,
+    .form-group select {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        box-sizing: border-box;
+
+    }
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        box-sizing: border-box;
+    }
+    .submit-btn {
+        background-color: #007bff; /* Blue color */
+        color: white;
+        padding: 10px 355px;
+        border: none;
+        border-radius: 30px; /* Rounded shape */
+        cursor: pointer;
+    }
+    .container-1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: auto; 
+max-width: 100%;
+object-fit: fill;
+
+
+ 
+}
+.centered {
+  position: absolute;
+  top: 50%;
+ left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color:black;
+}
+.centered-1 {
+  position: absolute;
+  top: 55%;
+ left: 18%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  color: black;
+}
+.pr{
+   
+    text-align: center;
+    
+}
+</style>
+</head>
+<body>
+    <div class="container-1">
+        <img src="header-page.jpg" alt="Snow" style="width: 100%; height: auto;;">
+
+        <div class="centered">  Make Appointments </div>
+        <div class="centered-1">Xcare => Make Appointements</div>
+      </div>
+      <div class="pr">
+        <h5 class="with">WITH ACCESS TO <br> <h1>24 Hour Emergency</h1><br><p>Our clinic is equipped with modern facilities and advanced medical technology to ensure accurate diagnoses
+            and effective treatments. This enables us to provide you with the highest standard of care.</p></h5>
+        
+      </div>
+<div class="container">
+    <h2>Make an Appointment</h2>
+    <div class="form-group">
+        <input type="text" placeholder="Your Name *" required>
+        <input type="email" placeholder="Your Email *" required>
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Your Phone *" required>
+        <input type="date" placeholder="Date">
+    </div>
+    <div class="form-group">
+        <select>
+            <option value="">Choose Department</option>
+            <option value="department1">Department 1</option>
+            <option value="department2">Department 2</option>
+            <option value="department3">Department 3</option>
+        </select>
+        
+        <select>
+            <option value="">Choose Doctor</option>
+            <option value="doctor1">Doctor 1</option>
+            <option value="doctor2">Doctor 2</option>
+            <option value="doctor3">Doctor 3</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <textarea placeholder="Type Appointment Note"></textarea>
+    </div>
+    <div class="form-group">
+        <button class="submit-btn">SUBMIT NOW</button>
+    </div>
+</div>
+</body>
+</html>
