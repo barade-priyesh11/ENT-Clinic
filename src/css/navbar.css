@@ -1,0 +1,124 @@
+/* Navigation Styles */
+
+.nav {
+    color: #031B4E;
+    font-family: 'Sora', sans-serif;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Style for the navigation bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #f0f7fd;
+    z-index: 1000;
+}
+
+/* Style for the navbar brand/logo */
+.navbar-brand {
+    margin-right: 25px;
+    margin-left: auto;
+}
+
+/* Style for the navigation links */
+.navbar-nav {
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin-right: 29px;
+}
+
+/* Style for the search form */
+.d-flex {
+    margin-left: 10px;
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown-item {
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Style for the button */
+.btn {
+    background-color: #053db4;
+    padding: 14px 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+}
+
+.btn span:last-child {
+    display: none;
+}
+
+.btn:hover {
+    background-color: #1176e2;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.btn:active {
+    background-color: #1176e2;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .navbar {
+        padding: 7px 15px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .dropdown-menu {
+        top: 100%;
+        left: 0;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+}
