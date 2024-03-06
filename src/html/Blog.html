@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENT clinic blog </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-   
+    <link rel="stylesheet" href="../Temp/header.css">
+    <link rel="stylesheet" href="../Temp/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -15,86 +19,74 @@
     <link href="/src/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/bootstrap.min.css">
 </head>
+
 <body>
-    <div class="container-fluid bg-light p-0  wow fadeIn" data-wow-delay="0.1s">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 ">
-                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    &nbsp;&nbsp;
-                    <small>Drive-in | Bopal | Gandhinagar | Chandlodiya</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center ">
-                    <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <small class="fa fa-phone-alt text-primary me"></small>
-                        
-                        <small>+919989759878</small>
+    <!-- Header element -->
+    <header class="sticky-top"> <!-- Added sticky-top class for sticky header -->
+
+        <div class="Nav">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./ear.html">Ear</a></li>
+                                    <li><a class="dropdown-item" href="#">Nose</a></li>
+                                    <li><a class="dropdown-item" href="#">Throat</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">More about ERT healthcare</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+
+                        <!-- Navbar brand/logo (if needed) -->
+                        <a class="navbar-brand" href="home.html">
+                            <img src="../Temp/img1/logo.svg" alt="" width="70" height="65"
+                                class="d-inline-block align-text-top">
+
+                        </a>
+                        <a href="../appointement/app.html">
+                            <button class="btn">Make An Appointment</button>
+                        </a>
+
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
-                
-                </div>
-                &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;
-                <div class=" d-inline-flex m-0 col-lg-3  ">
-                   
-                    <button class="btn btn-primary">Book Appointment</button>
-                </div>
-
-
-
-
-                
-            </div>
-            
+            </nav>
         </div>
-        
-    </div>
 
-&nbsp;
+    </header>
 
-    <nav class="navbar navbar-expand-lg bg-light sticky-top navbar-expand-lg sticky-top p-0 wow fadeIn d " data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-flex align-items-center  px-4 px-lg-5">
-            
-            <h1 class="m-0 text-primary"><i class="far fa-heart  me-3"></i>ENT Clinic</h1>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-10 ">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                &nbsp; 
-                <a href="about.html" class="nav-item nav-link">About</a>
-                &nbsp; &nbsp;
-                <a href="locations.html" class="nav-item nav-link">Locations</a> &nbsp;
-                &nbsp;
-                <a href="ENT.html" class="nav-item nav-link">E.N.T</a>
-                &nbsp; &nbsp;
-                <a href="Surgries.html" class="nav-item nav-link"> Surgries </a>
-                &nbsp; &nbsp;
-                <a href="Blog.html" class="nav-item nav-link">BLOG</a>
-                &nbsp; 
-                <a href="/src/html/Contact.html" class="nav-item nav-link">CONTACT</a>
-                &nbsp;
+
+
+
+
+
+
                 
-                <div class="input-group col-6">
-                    <input class="form-control border-end-0 border rounded-square " type="text" placeholder="search"  >
-                    <span class="input-group-append">
-                    <button class="btn btn-outline-secondary bg-white border-start-0 border rounded-bottom ms-n5" type="button">
-                    <i class="fa fa-search "></i>
-                    </button>
-                    </span>
-                    &nbsp;
-                   
-                    </div>
-    </nav>
+          
+
+
 
 
 
@@ -124,7 +116,7 @@
                                         <i class="fa fa-check text-primary"></i>
                                     </div>
                                     <div class="ms-4">
-                                        <!-- <p class="text-white mb-2">Quality</p> -->
+                                        
                                         <h5 class="text-white mb-0">Services</h5>
                                     </div>
                                     
@@ -325,5 +317,125 @@
             </div>
         </div>
     </div>
+     <!-- footer -->
+     <footer class="footer-section">
+        <div class="containerfooter">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, Indore MP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>Averybit@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="home.html"><img src="../footer/img/logo.svg" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                    incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="containercopyright">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024, All Right Reserved <a href="">Team 'A' Averybit </a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
