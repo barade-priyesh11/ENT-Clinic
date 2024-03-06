@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Appointment Form</title>
+<link rel="stylesheet" href="../Temp/header.css">
+<link rel="stylesheet" href="../Temp/navbar.css">
+<link rel="stylesheet" href="../footer/footer.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border-radius: 25px;
+        border: 2px solid #000;
+    }
+    .form-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        
+
+    }
+    .form-group input,
+    .form-group select {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        box-sizing: border-box;
+
+    }
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        box-sizing: border-box;
+    }
+    .submit-btn {
+        background-color: #007bff; /* Blue color */
+        color: white;
+        padding: 10px 355px;
+        border: none;
+        border-radius: 30px; /* Rounded shape */
+        cursor: pointer;
+    }
+    .container-1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: auto; 
+max-width: 100%;
+object-fit: fill;
+
+
+ 
+}
+.centered {
+  position: absolute;
+  top: 50%;
+ left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color:black;
+}
+.centered-1 {
+  position: absolute;
+  top: 55%;
+ left: 18%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  color: black;
+}
+.pr{
+   
+    text-align: center;
+    
+}
+</style>
+</head>
+<body>
+
+    <header class="sticky-top"> <!-- Added sticky-top class for sticky header -->
+
+        <div class="Nav">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./ear.html">Ear</a></li>
+                                    <li><a class="dropdown-item" href="#">Nose</a></li>
+                                    <li><a class="dropdown-item" href="#">Throat</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">More about ERT healthcare</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+
+                        <!-- Navbar brand/logo (if needed) -->
+                        <a class="navbar-brand" href="home.html">
+                            <img src="../Temp/img1/logo.svg" alt="" width="70" height="65"
+                                class="d-inline-block align-text-top">
+
+                        </a>
+                        <a href="../appointement/app.html">
+                            <button class="btn">Make An Appointment</button>
+                        </a>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <div class="container-1">
+        <img src="../appointement/images/header-page.jpg" alt="Snow" style="width: 100%; height: auto;;">
+
+        <div class="centered">  Make Appointments </div>
+        <div class="centered-1">Xcare => Make Appointements</div>
+      </div>
+      <div class="pr">
+        <h5 class="with">WITH ACCESS TO <br> <h1>24 Hour Emergency</h1><br><p>Our clinic is equipped with modern facilities and advanced medical technology to ensure accurate diagnoses
+            and effective treatments. This enables us to provide you with the highest standard of care.</p></h5>
+        
+      </div>
+<div class="container">
+    <h2>Make an Appointment</h2>
+    <div class="form-group">
+        <input type="text" placeholder="Your Name *" required>
+        <input type="email" placeholder="Your Email *" required>
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Your Phone *" required>
+        <input type="date" placeholder="Date">
+    </div>
+    <div class="form-group">
+        <select>
+            <option value="">Choose Department</option>
+            <option value="department1">Department 1</option>
+            <option value="department2">Department 2</option>
+            <option value="department3">Department 3</option>
+        </select>
+        
+        <select>
+            <option value="">Choose Doctor</option>
+            <option value="doctor1">Doctor 1</option>
+            <option value="doctor2">Doctor 2</option>
+            <option value="doctor3">Doctor 3</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <textarea placeholder="Type Appointment Note"></textarea>
+    </div>
+    <div class="form-group">
+        <button class="submit-btn">SUBMIT NOW</button>
+    </div>
+</div>
+ <!-- footer -->
+ <footer class="footer-section">
+    <div class="containerfooter">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>1010 Avenue, sw 54321, Indore MP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>9876543210 0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>Averybit@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="home.html"><img src="../footer/img/logo.svg" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Expert Team</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="containercopyright">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2024, All Right Reserved <a href="">Team 'A' Averybit </a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>
