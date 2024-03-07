@@ -1,4 +1,15 @@
-/* ... (previous styles) */
+/* Navigation Styles */
+
+.nav {
+    color: #031B4E;
+    font-family: 'Sora', sans-serif;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    margin: 0 10px;
+}
 
 /* Style for the navigation bar */
 .navbar {
@@ -89,7 +100,7 @@
 /* Responsive Styles */
 @media (max-width: 767px) {
     .navbar {
-        padding: 7px 15px; /* Adjusted padding for smaller screens */
+        padding: 7px 15px;
     }
 
     .navbar-nav {

@@ -4,7 +4,43 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Appointment Form</title>
+<link rel="stylesheet" href="./appointment css/header.css">
+<link rel="stylesheet" href="./appointment css/navbar.css">
 <style>
+    /* Add the following styles to your existing styles */
+
+/* Style for the navbar-toggler icon */
+.navbar-toggler {
+    border: none; /* Remove border to make it clean */
+}
+
+/* Center the button in the navbar */
+.btn {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Sticky Styles */
+.Nav {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Change the background color as needed */
+    z-index: 1000;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 767px) {
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .btn {
+        margin: 10px auto; /* Add some margin for better spacing */
+    }
+}
+
+    /* comment */
     body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
@@ -88,8 +124,69 @@ object-fit: fill;
 </style>
 </head>
 <body>
+    
+
+        <!-- Header element -->
+        <header class="sticky-top"> <!-- Added sticky-top class for sticky header -->
+
+            <div class="Nav">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="./ear.html">Ear</a></li>
+                                        <li><a class="dropdown-item" href="#">Nose</a></li>
+                                        <li><a class="dropdown-item" href="#">Throat</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">More about ERT healthcare</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+
+                            <!-- Navbar brand/logo (if needed) -->
+                            <a class="navbar-brand" href="home.html">
+                                <img src="./img1/logo.svg" alt="" width="70" height="65"
+                                    class="d-inline-block align-text-top">
+
+                            </a>
+                            <a href="../appointement/app.html">
+                                <button class="btn">Make An Appointment</button>
+                            </a>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+      
+
+    
+
     <div class="container-1">
-        <img src="header-page.jpg" alt="Snow" style="width: 100%; height: auto;;">
+        <img src="../appointement/images/header-page.jpg" alt="Snow" style="width: 100%; height: auto;;">
 
         <div class="centered">  Make Appointments </div>
         <div class="centered-1">Xcare => Make Appointements</div>

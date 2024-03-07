@@ -1,19 +1,9 @@
 /* styles.css */
 
-/* Define the container class */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #f0f7fd;
-    padding: 20px;
-
-    max-width: none;
-    width: auto;
-    padding: 0 50px
-}
+/* General Styles */
 
 body {
-    font-family: Roboto,sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.5;
@@ -22,55 +12,72 @@ body {
     text-transform: none;
     font-style: normal;
     background-color: #f0f7fd;
+    margin: 0; /* Remove default body margin */
 }
 
-/* Additional styling for the header */
+/* Container Styles */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f0f7fd;
+    padding: 20px;
+    max-width: none;
+    width: auto;
+    padding: 0 20px; /* Adjusted padding */
+}
+
+/* Header Styles */
+
 header {
     background-color: #f0f7fd;
     color: #200202;
     padding: 10px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
+/* Navigation Styles */
 
 .nav {
-    
-    color: #031B4E; /* Font color */
+    color: #031B4E;
     font-family: 'Sora', sans-serif;
     padding: 10px;
-    
 }
 
-/* Example styling for navigation links (adjust as needed) */
 .nav a {
-    
     text-decoration: none;
     margin: 0 10px;
 }
 
-
-/* search logo css */
- /* Additional styling for the header - Responsive */
-/* @media (max-width: 767px) {
-    /* header {
-        padding: 10px 5px;
-    } */
-*/
-
+/* Marquee Tag Styles */
 
 .pbmit-tag-wrapper {
-    display: inline-block; /* Add this line to display inline */
+    display: inline-block;
     background-color: #1176e2;
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
 }
 
-
 /* Hover effect on the marquee items */
-/* image css ear page */
 
-.img-fluid{
-    height: 570px;
-    width: 1400px;
-    border-radius: 11px;
+/* Responsive Styles */
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 10px; /* Adjusted padding for smaller screens */
+    }
+
+    header {
+        padding: 10px 0; /* Adjusted padding for smaller screens */
+    }
+
+    .img-fluid {
+        height: auto; /* Make the image responsive in terms of height */
+        width: 100%; /* Make the image fill the width of its container */
+        border-radius: 11px;
+    }
 }
