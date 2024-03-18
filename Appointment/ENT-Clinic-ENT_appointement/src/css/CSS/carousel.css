@@ -1,0 +1,107 @@
+/* styles.css */
+
+/* Add some styling to the carousel container */
+.sliderimages {
+    margin: 20px; /* Adjust margin as needed */
+}
+
+/* Style for the carousel */
+.carousel {
+    border-radius: 20px; /* Adjust the border-radius for rounded corners */
+    overflow: hidden; /* Hide overflow to round the corners properly */
+}
+
+/* Style for carousel items */
+.carousel-item {
+    border-radius: 15px; /* Match the border-radius of the carousel */
+}
+
+/* Style for carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    border-radius: 10px; /* Adjust the border-radius for rounded controls */
+}
+
+/* Style for carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333; /* Change the color of the control icons */
+    border-radius: 50%; /* Make the control icons circular */
+}
+
+/* Adjust the spacing between controls and the carousel items */
+.carousel-control-prev {
+    margin-left: -40px;
+}
+
+.carousel-control-next {
+    margin-right: -40px;
+}
+
+
+
+/* slider css for labelling */
+
+
+/* styles.css */
+
+/* Add some styling to the carousel container */
+.sliderimages {
+    margin: 20px; /* Adjust margin as needed */
+}
+
+/* Style for the carousel */
+.carousel {
+    border-radius: 20px; /* Adjust the border-radius for rounded corners */
+    overflow: hidden; /* Hide overflow to round the corners properly */
+    position: relative; /* Set the position to relative for absolute positioning of captions */
+}
+
+/* Style for carousel items */
+.carousel-item {
+    border-radius: 20px; /* Match the border-radius of the carousel */
+    position: relative; /* Set the position to relative for absolute positioning of captions */
+}
+
+/* Style for carousel captions */
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background color for better readability */
+    color: #fff; /* Text color */
+    padding: 10px; /* Adjust padding as needed */
+    text-align: center; /* Center-align text */
+    width: 100%;
+}
+
+/* Style for carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    border-radius: 20px; /* Adjust the border-radius for rounded controls */
+}
+
+/* Style for carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333; /* Change the color of the control icons */
+    border-radius: 50%; /* Make the control icons circular */
+}
+
+/* Adjust the spacing between controls and the carousel items */
+.carousel-control-prev {
+    margin-left: -40px;
+}
+
+.carousel-control-next {
+    margin-right: -40px;
+}
+
+
+/* Example styling for the carousel - Responsive */
+@media (max-width: 767px) {
+    .sliderimages {
+        margin: 10px; /* Adjust margin as needed for smaller screens */
+    }
+}
